@@ -53,7 +53,7 @@ class sevenSegDisplay:
         Creating an image of a 7 segment display given a digit to display.
 
         Doing a gap of 5 pixels between segments
-        Overall height = 5 + 30 + 150 + 10 + 150 + 30 + 5= 380
+        Overall height = 5 + 30 + 150 + 10 + 150 + 30 + 5 = 380
         Overall width = 5 + 30 + 150 + 30 + 5 = 220
         """
         picture = Image.new('RGBA', (220, 380))
