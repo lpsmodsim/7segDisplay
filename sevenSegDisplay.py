@@ -37,8 +37,8 @@ class sevenSegDisplay:
         elif color == 'blue':
             rgba[:, :, 2] = ones((50, 150), dtype=uint8) * 255
         else:
-            print('Color not supported, please use red, green, or blue')
-            return
+            raise RuntimeError('Color not supported, please use '
+                               'red, green, or blue')
 
         # need to shape the alpha channel correctly to not overlap pixels
         for x in range(25):
